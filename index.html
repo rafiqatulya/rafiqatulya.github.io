@@ -152,7 +152,8 @@
             <!-- Right Content: Image/Photo -->
             <div class="w-full md:w-[35%] absolute bottom-0 right-0 md:relative h-[45%] md:h-full z-10 flex items-end justify-end md:justify-center overflow-hidden md:overflow-visible pointer-events-none">
                 <!-- FOTO TRANSPARAN -->
-                <img src="foto-hero-transparent.webp" alt="Rafiqatul Ulya" class="w-auto h-full md:h-[90%] lg:h-[105%] max-w-none object-contain object-right-bottom drop-shadow-[0_10px_30px_rgba(0,0,0,0.6)] relative md:bottom-[-5%] right-[-10%] md:right-0">
+                <!-- Fallback to placehold.co if local image doesn't exist yet -->
+                <img src="foto-hero-transparent.webp" onerror="this.src='https://placehold.co/400x600/0F1423/A2A8BA?text=Hero+Image'" alt="Rafiqatul Ulya" class="w-auto h-full md:h-[90%] lg:h-[105%] max-w-none object-contain object-right-bottom drop-shadow-[0_10px_30px_rgba(0,0,0,0.6)] relative md:bottom-[-5%] right-[-10%] md:right-0">
             </div>
             
         </div>
@@ -165,7 +166,7 @@
             <!-- Gambar Kiri -->
             <div class="relative max-w-sm mx-auto md:mx-0">
                 <div class="absolute inset-0 border-2 border-brand-muted/20 arch-img translate-x-4 translate-y-4"></div>
-                <img src="foto-about.jpg" alt="Rafiqatul Ulya" class="w-full h-[440px] object-cover arch-img shadow-xl relative z-10 border-4 border-white bg-gray-100">
+                <img src="foto-about.jpg" onerror="this.src='https://placehold.co/400x440/f3f4f6/1E293B?text=About+Image'" alt="Rafiqatul Ulya" class="w-full h-[440px] object-cover arch-img shadow-xl relative z-10 border-4 border-white bg-gray-100">
                 <i class="fas fa-certificate text-brand-secondary text-4xl absolute -left-4 top-10 z-20"></i>
             </div>
             
@@ -395,7 +396,7 @@
             <!-- Project 1: Maju Tetap Bersama -->
             <div class="group flex flex-col bg-white rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-200 overflow-hidden fade-in">
                 <div class="h-[200px] relative border-b border-gray-100 overflow-hidden bg-gray-100">
-                    <img src="project-mtb.jpg" alt="Maju Tetap Bersama" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <img src="project-mtb.jpg" onerror="this.src='https://placehold.co/400x200/e2e8f0/1e293b?text=Project+MTB'" alt="Maju Tetap Bersama" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-brand-navy/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                         <a href="https://majutetapbersama.com/" target="_blank" class="bg-white text-brand-dark w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform scale-50 group-hover:scale-100 transition"><i class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -421,7 +422,7 @@
             <!-- Project 2: Pasar Tutor -->
             <div class="group flex flex-col bg-white rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-200 overflow-hidden fade-in">
                 <div class="h-[200px] relative border-b border-gray-100 overflow-hidden bg-gray-100">
-                    <img src="project-pasartutor.jpg" alt="Pasar Tutor" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <img src="project-pasartutor.jpg" onerror="this.src='https://placehold.co/400x200/e2e8f0/1e293b?text=Project+Pasar+Tutor'" alt="Pasar Tutor" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-brand-navy/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                         <a href="https://www.pasartutor.com/" target="_blank" class="bg-white text-brand-dark w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform scale-50 group-hover:scale-100 transition"><i class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -447,7 +448,7 @@
             <!-- Project 3: BPKP Portal -->
             <div class="group flex flex-col bg-white rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-200 overflow-hidden fade-in">
                 <div class="h-[200px] relative border-b border-gray-100 overflow-hidden bg-gray-100">
-                    <img src="project-bpkp.jpg" alt="BPKP Portal" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <img src="project-bpkp.jpg" onerror="this.src='https://placehold.co/400x200/e2e8f0/1e293b?text=Project+BPKP'" alt="BPKP Portal" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-brand-navy/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                         <a href="https://sites.google.com/view/bpkpsumbar/halaman-muka" target="_blank" class="bg-white text-brand-dark w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform scale-50 group-hover:scale-100 transition"><i class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -473,7 +474,7 @@
             <!-- Project 4: AIMS -->
             <div class="group flex flex-col bg-white rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-200 overflow-hidden fade-in">
                 <div class="h-[200px] relative border-b border-gray-100 overflow-hidden bg-gray-100">
-                    <img src="project-aims.jpg" alt="AIMS Messaging App" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <img src="project-aims.jpg" onerror="this.src='https://placehold.co/400x200/e2e8f0/1e293b?text=Project+AIMS'" alt="AIMS Messaging App" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-brand-navy/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                         <a href="https://drive.google.com/file/d/1feJrbV4Jlgn7-MY7DGpABoo_f_CKMeUp/view" target="_blank" class="bg-white text-brand-dark w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform scale-50 group-hover:scale-100 transition"><i class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -499,7 +500,7 @@
             <!-- Project 5: Mining Command Center -->
             <div class="group flex flex-col bg-white rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-200 overflow-hidden fade-in">
                 <div class="h-[200px] relative border-b border-gray-100 overflow-hidden bg-gray-100">
-                    <img src="project-mining.jpg" alt="Mining Command Center" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <img src="project-mining.jpg" onerror="this.src='https://placehold.co/400x200/e2e8f0/1e293b?text=Project+Mining'" alt="Mining Command Center" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-brand-navy/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                         <a href="https://drive.google.com/file/d/1UqmgmKMvlobMr0oK5hbc7zAuzPm76DPU/view" target="_blank" class="bg-white text-brand-dark w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform scale-50 group-hover:scale-100 transition"><i class="fas fa-external-link-alt"></i></a>
                     </div>
@@ -525,7 +526,7 @@
             <!-- Project 6: BMT Analytics -->
             <div class="group flex flex-col bg-white rounded-2xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 border border-gray-200 overflow-hidden fade-in">
                 <div class="h-[200px] relative border-b border-gray-100 overflow-hidden bg-gray-100">
-                    <img src="project-bmt.jpg" alt="BMT Financial Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
+                    <img src="project-bmt.jpg" onerror="this.src='https://placehold.co/400x200/e2e8f0/1e293b?text=Project+BMT'" alt="BMT Financial Dashboard" class="w-full h-full object-cover group-hover:scale-105 transition duration-700">
                     <div class="absolute inset-0 bg-brand-navy/60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
                         <a href="#" target="_blank" class="bg-white text-brand-dark w-12 h-12 rounded-full flex items-center justify-center shadow-lg transform scale-50 group-hover:scale-100 transition"><i class="fas fa-chart-line"></i></a>
                     </div>
@@ -559,13 +560,55 @@
                 <p class="text-brand-muted text-sm font-medium">Professional validations of my skills and knowledge.</p>
             </div>
 
-            <!-- Grid Certificates -->
+            <!-- Grid Certificates (Total 6 - 2 Baris x 3 Kolom) -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 
-                <!-- Cert 1: Google -->
+                <!-- NEW Cert 1: Microsoft Fabric -->
                 <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden group flex flex-col h-full shadow-sm hover:shadow-xl hover:border-brand-secondary transition duration-300">
                     <div class="h-48 relative overflow-hidden bg-gray-100 border-b border-gray-100">
-                        <img src="cert-google.jpg" alt="Google UX Design Certificate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="image_8317bb.png" onerror="this.src='https://placehold.co/400x300/f8fafc/3b82f6?text=Microsoft+Fabric+Cert'" alt="Microsoft Fabric Real-Time Intelligence" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="font-sans font-black text-brand-dark text-xl leading-tight mb-1">Microsoft Fabric</h4>
+                        <p class="font-serif italic text-brand-secondary text-sm font-bold tracking-wide mb-4">Applied Skills Certificate</p>
+                        <p class="text-brand-muted text-sm leading-relaxed font-medium flex-grow">
+                            Demonstrated ability to implement real-time intelligence solutions and process data streams utilizing Microsoft Fabric.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- NEW Cert 2: Google BI -->
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden group flex flex-col h-full shadow-sm hover:shadow-xl hover:border-brand-secondary transition duration-300">
+                    <div class="h-48 relative overflow-hidden bg-gray-100 border-b border-gray-100">
+                        <img src="image_831799.jpg" onerror="this.src='https://placehold.co/400x300/f8fafc/3b82f6?text=Google+BI+Cert'" alt="Google Business Intelligence Certificate" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="font-sans font-black text-brand-dark text-xl leading-tight mb-1">Google Business Intelligence</h4>
+                        <p class="font-serif italic text-brand-secondary text-sm font-bold tracking-wide mb-4">Professional Certificate</p>
+                        <p class="text-brand-muted text-sm leading-relaxed font-medium flex-grow">
+                            Mastered foundational BI concepts, data models, pipelines, and dashboard creation to transform raw data into actionable business insights.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- NEW Cert 3: MySkill Data Science -->
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden group flex flex-col h-full shadow-sm hover:shadow-xl hover:border-brand-secondary transition duration-300">
+                    <div class="h-48 relative overflow-hidden bg-gray-100 border-b border-gray-100">
+                        <img src="image_83177a.jpg" onerror="this.src='https://placehold.co/400x300/f8fafc/3b82f6?text=Data+Science+Cert'" alt="Data Science Certificate" class="w-full h-full object-cover object-top group-hover:scale-105 transition duration-500">
+                    </div>
+                    <div class="p-6 flex flex-col flex-grow">
+                        <h4 class="font-sans font-black text-brand-dark text-xl leading-tight mb-1">Data Science</h4>
+                        <p class="font-serif italic text-brand-secondary text-sm font-bold tracking-wide mb-4">MySkill Specialization</p>
+                        <p class="text-brand-muted text-sm leading-relaxed font-medium flex-grow">
+                            Completed 18 comprehensive courses covering the full spectrum of Data Science, from data preparation to advanced analytical modeling.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Cert 4: Google (Lama) -->
+                <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden group flex flex-col h-full shadow-sm hover:shadow-xl hover:border-brand-secondary transition duration-300">
+                    <div class="h-48 relative overflow-hidden bg-gray-100 border-b border-gray-100">
+                        <img src="cert-google.jpg" onerror="this.src='https://placehold.co/400x300/f8fafc/3b82f6?text=Google+UX+Cert'" alt="Google UX Design Certificate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h4 class="font-sans font-black text-brand-dark text-xl leading-tight mb-1">Google UX Design</h4>
@@ -576,10 +619,10 @@
                     </div>
                 </div>
 
-                <!-- Cert 2: Data Analysis -->
+                <!-- Cert 5: Data Analysis (Lama) -->
                 <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden group flex flex-col h-full shadow-sm hover:shadow-xl hover:border-brand-secondary transition duration-300">
                     <div class="h-48 relative overflow-hidden bg-gray-100 border-b border-gray-100">
-                        <img src="cert-myskill.jpg" alt="Data Analysis Certificate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="cert-myskill.jpg" onerror="this.src='https://placehold.co/400x300/f8fafc/3b82f6?text=Data+Analysis+Cert'" alt="Data Analysis Certificate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h4 class="font-sans font-black text-brand-dark text-xl leading-tight mb-1">Data Analysis</h4>
@@ -590,10 +633,10 @@
                     </div>
                 </div>
 
-                <!-- Cert 3: CodePolitan -->
+                <!-- Cert 6: CodePolitan (Lama) -->
                 <div class="bg-white border border-gray-200 rounded-2xl overflow-hidden group flex flex-col h-full shadow-sm hover:shadow-xl hover:border-brand-secondary transition duration-300">
                     <div class="h-48 relative overflow-hidden bg-gray-100 border-b border-gray-100">
-                        <img src="cert-codepolitan.jpg" alt="Basic Algorithms Certificate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                        <img src="cert-codepolitan.jpg" onerror="this.src='https://placehold.co/400x300/f8fafc/3b82f6?text=Basic+Algorithm+Cert'" alt="Basic Algorithms Certificate" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
                     </div>
                     <div class="p-6 flex flex-col flex-grow">
                         <h4 class="font-sans font-black text-brand-dark text-xl leading-tight mb-1">Basic Algorithms</h4>
